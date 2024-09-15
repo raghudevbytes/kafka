@@ -1,0 +1,33 @@
+[
+  {
+    "type": "record",
+    "namespace": "com.customer",
+    "name": "customer",
+    "fields": [
+      {
+        "type": ["null","string"],"name": "name","default": null
+      },
+      {
+        "type": "int",
+        "name": "age",
+        "default": 0
+      },
+      {
+        "name": "status",
+        "type": {
+          "name": "Status",
+          "type": "enum",
+          "symbols": ["ACTIVE","BLOCKED","SUSPENDED","INACTIVE","NEW"]
+        }
+      },
+      {
+        "name": "lastLoggedIn",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        },
+        "doc": "User last logged in time"
+      }
+    ]
+  }
+]
