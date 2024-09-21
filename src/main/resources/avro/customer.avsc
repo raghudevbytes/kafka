@@ -1,8 +1,8 @@
 [
   {
     "type": "record",
-    "namespace": "com.customer",
-    "name": "customer",
+    "namespace": "com.avro.model",
+    "name": "Customer",
     "fields": [
       {
         "type": ["null","string"],"name": "name","default": null
